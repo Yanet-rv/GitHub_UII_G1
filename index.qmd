@@ -1,32 +1,26 @@
 ---
-title: "NIVELES DE PORCINAZA Y DENSIDADES DE SIEMBRA SOBRE EL RENDIMIENTO DE MAÍZ MORADO (Zea mays L. var. INIA-601 en Lámud)"
-author: "Base de datos tomado de Bach. Miguel Angel Zagaceta Llanca"
-group: "G1"
-date: `r Sys.Date()`
-format: 
+title: "Análisis estadístico del abono de PORCINAZA Y DENSIDADES OBTIMAS DE SIEMBRA SOBRE EL RENDIMIENTO DE MAÍZ MORADO (Zea mays L.) var. INIA-601."
+author: "G1"
+format:
   html:
     toc: true
-    toc-depth: 3
-    theme: cosmo
+    toc-expand: true
+    toc-depth: 4
     toc-location: left
     number-sections: true
+    self-contained: true
     code-fold: true
-    code-tools: true
-    smooth-scroll: true
-    page-layout: full
-editor: visual
-execute:
-  echo: true
+    output-file: "ESM"
+editor_options: 
+  chunk_output_type: console
+execute: 
   warning: false
   message: false
+  echo: true
 ---
-
 
 ![](https://aula.untrm.edu.pe/pluginfile.php/1/theme_moove/logo/1649453146/Sin%20t%C3%ADtulo-1.png){width=90% align="center"}               
 
-> Análisis estadístico del abono de PORCINAZA Y DENSIDADES OBTIMAS DE SIEMBRA SOBRE EL RENDIMIENTO DE MAÍZ MORADO (Zea mays L.) var. INIA-601.
-
----
 # Integrantes G1
 
 1. Colunche Vasquez Josue Jhonatan 
@@ -349,12 +343,37 @@ ggplot(df_cld_altura30, aes(x = porcinaza, y = emmean, fill = densidad)) +
 
 ```
 
+variable 03: Altura de plantas 180 dias
+
+### Modelo
+
+
+$$  Porcinaza_{altura180d} = \mu + bloque + porcinaza +densidad + porcinaza*densidad + e $$
+```{r}
+library(lme4)
+library(lmerTest)
+library(emmeans)
+library(multcomp)
+library(multcompView)
+library(dplyr)
+library(ggplot2)
+
+```
+
 
 
 # CONCLUSIONES
+
 En concluión las trs variables evaluadas 
 
 #REFERENCIA BIBLIOGRAFICA
 
 Zagaceta Llanca (2023). Niveles de porcinaza y densidades de siembra sobre el rendimiento de maíz morado (Zea mays L.) var. INIA-601 en Lámud.
+
+
+martes/28/octubre
+
+
+
+
 

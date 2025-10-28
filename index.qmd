@@ -1,6 +1,6 @@
 ---
 title: "NIVELES DE PORCINAZA Y DENSIDADES DE SIEMBRA SOBRE EL RENDIMIENTO DE MAÍZ MORADO (Zea mays L.) var. INIA-601 EN LÁMUD)"
-author: " Bach. Miguel Angel Zagaceta Llanca"
+author: " Tomado de Bach. Miguel Angel Zagaceta Llanca"
 date: "r Sys.Date()"
 format: 
   html:

@@ -334,13 +334,6 @@ ggcorr(dtmv %>% dplyr::select(where(is.numeric)))
 
 Gráfico 06 : El gráfico muestra la relación entre las variables agronómicas del experimento. Se observa una fuerte correlación positiva (en tonos rojos) entre el rendimiento (rend_g_ha) y variables como mazorcas por hectárea (maz_ha), peso, diámetro y longitud de mazorca, indicando que estos componentes determinan directamente la productividad.
 
-# CONCLUSIONES
-
-
-
-
-
-
 
 # REFERENCIA BIBLIOGRÁFICA
 
